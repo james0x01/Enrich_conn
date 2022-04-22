@@ -15,7 +15,7 @@ type Val: record {
 
 global enrichment_table: table[addr] of Val = table();
 
-event bro_init() {
+event zeek_init() {
     Input::add_table([
 		$source="enrichment.csv", $name="enrichment_table",
 		$idx=Idx, $val=Val, $destination=enrichment_table,
