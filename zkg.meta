@@ -1,0 +1,7 @@
+[package]
+script_dir = scripts
+description = This package enriches the conn.log with fields from an external data source to provide context. 
+tags = RMF, HVA 
+
+[input enrichment.csv]
+description = Enriching data by using the IP or MAC to add user, role, location to the conn.log
